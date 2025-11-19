@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Cookies - Nobless Properties | Imóveis de Luxo Premium</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description"
+        content="Política de Cookies da Nobless Properties. Saiba como utilizamos cookies para melhorar a sua experiência no nosso website." />
+    <style>
+        .cookies-hero {
+            height: 50vh;
+            min-height: 400px;
+        }
+
+        .cookies-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .cookies-section {
+            margin-bottom: 3rem;
+        }
+
+        .cookies-section h2 {
+            color: #c8a26c;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cookies-section h3 {
+            color: #333;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .cookies-section p,
+        .cookies-section ul {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .cookies-section ul {
+            padding-left: 1.5rem;
+        }
+
+        .cookies-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: #f9f9f9;
+            border-left: 4px solid #c8a26c;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .cookies-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .cookies-table th {
+            background: #c8a26c;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .cookies-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .cookies-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .cookies-table tr:hover {
+            background: #f0f0f0;
+        }
+
+        .cookie-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #e9ecef;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .cookies-hero {
+                height: 40vh;
+                min-height: 300px;
+            }
+
+            .cookies-content {
+                padding: 0 1rem;
+            }
+
+            .cookies-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            .cookies-table th,
+            .cookies-table td {
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <!-- Sidebar Navigation -->
+    <header
+        class="hidden lg:flex fixed top-0 left-0 z-50 h-screen w-[60px] bg-white/95 backdrop-blur-luxury shadow-warm-sm flex-col border-r-2 border-r-[#0000]">
+
+        <!-- Botão do Menu -->
+        <div class="flex flex-col items-center p-4 border-b border-gray-100">
+            <button id="menu-toggle-btn" class="p-2 text-text-primary hover:text-primary transition-luxury">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <span class="uppercase text-[10px] transform -rotate-90 whitespace-nowrap mt-2">Menu</span>
+        </div>
+
+        <!-- Botão de Busca -->
+        <div class="flex flex-col items-center p-4 border-b border-gray-100">
+            <button id="search-btn" class="p-2 text-text-primary hover:text-primary transition-luxury">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+            <span class="uppercase text-[10px] transform -rotate-90 whitespace-nowrap mt-2">Busca</span>
+        </div>
+
+        <!-- Espaço vazio restante -->
+        <div class="flex-grow"></div>
+
+        <!-- Ícones de Redes Sociais -->
+        <div class="flex flex-col items-center space-y-4 p-4 border-t border-gray-100">
+            <a href="#" class="text-text-secondary hover:text-primary transition-luxury">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                </svg>
+            </a>
+            <a href="#" class="text-text-secondary hover:text-primary transition-luxury">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+            </a>
+            <a href="#" class="text-text-secondary hover:text-primary transition-luxury">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="mx-auto mb-4">
+            <select
+                class="bg-transparent border border-secondary-300 py-2 text-sm focus:outline-none focus:border-primary">
+                <option value="en">EN</option>
+                <option value="pt">PT</option>
+                <option value="fr">FR</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-luxury shadow-warm-sm xs:block sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
+        <nav class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="../"><img src="../assets/images/logo.png" alt="" class="logo"></a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="lg:hidden p-2 text-text-primary hover:text-primary transition-luxury">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-secondary-200">
+                <div class="px-4 py-4 space-y-4">
+                    <a href="../" class="block text-text-secondary hover:text-primary transition-luxury">Início</a>
+                    <a href="quem-somos.html"
+                        class="block text-text-secondary hover:text-primary transition-luxury">Quem Somos</a>
+                    <a href="property_showcase_gallery.html"
+                        class="block text-text-secondary hover:text-primary transition-luxury">Propriedades</a>
+                    <a href="lifestyle_content_hub.html"
+                        class="block text-text-secondary hover:text-primary transition-luxury">Lifestyle</a>
+                    <a href="contact_and_inquiry_management.html"
+                        class="block bg-primary text-white px-6 py-3 rounded-luxury hover:bg-primary-600 transition-luxury text-center">Contato</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Vertical Navigation Menu Overlay -->
+    <div id="vertical-menu-overlay" class="fixed inset-0 z-50 hidden">
+        <!-- O conteúdo do menu lateral -->
+        <div class="flex h-full relative z-10">
+            <!-- Left Side - Vertical Navigation -->
+            <div class="w-80 bg-white shadow-warm-xl overflow-y-auto">
+                <div class="p-8">
+                    <!-- Logo -->
+                    <div class="flex items-center mb-12">
+                        <img class="logo" src="../assets/images/logo.png" alt="">
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <nav class="space-y-8">
+                        <a href="../"
+                            class="block text-lg text-text-primary hover:text-primary transition-luxury font-medium">Início</a>
+                        <a href="quem-somos.html"
+                            class="block text-lg text-text-secondary hover:text-primary transition-luxury">Quem
+                            somos</a>
+                        <a href="property_showcase_gallery.html"
+                            class="block text-lg text-text-secondary hover:text-primary transition-luxury">Nossos
+                            Empreendimentos</a>
+                        <a href="quem-somos.html#partners"
+                            class="block text-lg text-text-secondary hover:text-primary transition-luxury">Nossa Equipe
+                            de Parceiros</a>
+
+                        <a href="contact_and_inquiry_management.html"
+                            class="block text-lg text-text-secondary hover:text-primary transition-luxury">Contatos</a>
+                    </nav>
+
+                    <!-- Social Media -->
+                    <div class="mt-16">
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-primary transition-luxury">
+                                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-primary transition-luxury">
+                                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-primary transition-luxury">
+                                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Language Selector -->
+                    <div class="mt-8">
+                        <select
+                            class="bg-transparent border border-secondary-300 px-3 py-2 text-sm focus:outline-none focus:border-primary">
+                            <option value="en">EN</option>
+                            <option value="pt">PT</option>
+                            <option value="fr">FR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Property Cards -->
+            <div class="flex-1 bg-white/95 backdrop-blur-luxury overflow-y-auto flex flex-col">
+                <!-- Cabeçalho fixo no topo -->
+                <div class="w-full p-8">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-2xl font-source-pro font-bold text-text-primary">Descubra nosso portfólio</h2>
+                        <button id="close-menu-btn" class="p-2 text-text-primary hover:text-primary transition-luxury">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Conteúdo centralizado -->
+                <div class="flex-grow flex items-center justify-center p-8">
+                    <div class="w-full max-w-7xl">
+                        <div class="swiper-container overflow-hidden relative">
+                            <div class="swiper-wrapper">
+                                <!-- Slides do portfólio -->
+                                <div class="swiper-slide w-80 lg:w-96 mb-4">
+                                    <a href="#"
+                                        class="h-[490px] block group relative overflow-hidden shadow-lg hover-scale">
+                                        <img src="../assets/images/properties/meco/interiores/A/08.jpg"
+                                            alt="Mansão Moderna"
+                                            class="absolute z-0 object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-700">
+                                        <div
+                                            class="absolute gradient transition duration-300 group-hover:bg-black group-hover:opacity-90 w-full h-full z-10">
+                                        </div>
+                                        <div
+                                            class="absolute left-0 right-0 bottom-0 p-6 z-30 transform translate-y-1/2 transition duration-300 h-full group-hover:translate-y-0 delay-100 flex flex-col justify-end">
+                                            <div class="flex-grow flex flex-col justify-end text-center">
+                                                <span
+                                                    class="text-xs font-semibold uppercase bg-[#c8a26c] px-2 py-1 rounded inline-block mx-auto mb-2">Luxo</span>
+                                                <h3
+                                                    class="mt-2 text-xl font-bold leading-snug text-white transition duration-300 group-hover:underline">
+                                                    Meco Residences
+                                                </h3>
+                                                <p
+                                                    class="text-white pb-4 opacity-0 transition duration-300 group-hover:opacity-100 text-center text-sm mt-2">
+                                                    Uma propriedade exclusiva com design sofisticado e comodidades de
+                                                    ponta.
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="opacity-0 transition duration-300 group-hover:opacity-100 mt-auto flex flex-col items-center">
+                                                <div class="flex justify-center items-center text-white text-sm mb-4">
+                                                    <span class="mr-4"><i class="text-[#c8a26c] fas fa-bed mr-1"></i>
+                                                        5</span>
+                                                    <span class="mr-4"><i class="text-[#c8a26c] fas fa-bath mr-1"></i>
+                                                        6</span>
+                                                    <span><i class="text-[#c8a26c] fas fa-ruler-combined mr-1"></i>
+                                                        850m²</span>
+                                                </div>
+                                                <button
+                                                    class="bg-white text-black text-sm px-4 py-2 font-semibold border-2 border-white hover:border-black hover:bg-gray-300 transition-colors">
+                                                    Ver Imóvel &rarr;
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Mais slides... -->
+                            </div>
+                        </div>
+
+                        <!-- Footer Action -->
+                        <div class="mt-12 text-center">
+                            <a href="property_showcase_gallery.html"
+                                class="bg-primary hover:bg-primary-600 text-white px-8 py-4 text-lg font-medium transition-luxury shadow-warm-lg hover-scale">
+                                Veja todas as propriedades
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative cookies-hero flex items-center justify-center overflow-hidden parallax">
+            <div class="absolute inset-0 z-0">
+                <img src="../assets/images/banner/cookies-banner.jpg" alt="Política de Cookies"
+                    class="w-full h-full object-cover" loading="lazy"
+                    onerror="this.src='https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+            </div>
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+            <div
+                class="relative z-20 text-center text-white px-4 w-full max-w-4xl mx-auto flex flex-col items-center justify-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-source-pro font-bold mb-6 fade-in" data-aos="fade-down"
+                    data-aos-duration="800">
+                    Política de Cookies
+                </h1>
+                <p class="text-lg md:text-xl lg:text-1xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed animate-on-scroll"
+                    data-aos="fade-up" data-aos-delay="200">
+                    Saiba como utilizamos cookies para melhorar a sua experiência no nosso website
+                </p>
+            </div>
+        </section>
+
+        <!-- Cookies Content Section -->
+        <section class="py-16 lg:py-20 bg-white">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="cookies-content" data-aos="fade-up">
+                    <!-- Introdução -->
+                    <div class="cookies-section">
+                        <h2>Política de Cookies</h2>
+                        <p>O cookie é uma informação que é colocada automaticamente no computador ou dispositivo móvel
+                            dos utilizadores quando estes acedem a alguns Sites. O cookie identifica o programa de
+                            navegação no servidor, possibilitando o armazenamento de informação, por forma a, por
+                            exemplo, melhorar a experiência dos Utilizadores, bem como analisar e rever performances do
+                            Site.</p>
+                    </div>
+
+                    <!-- Tipos de Cookies -->
+                    <div class="cookies-section">
+                        <h3>Cookies - Que tipo de cookies existem?</h3>
+                        <p>Existem diversos tipos de cookies.</p>
+
+                        <h4>Considerando período de vida útil dos cookies, estes podem ser:</h4>
+                        <ul>
+                            <li><strong>(a) Cookies permanentes</strong> - são cookies que ficam armazenados, mesmo após
+                                fechar o browser, nos seus equipamentos de acesso (PC, mobile e tablet) e que são
+                                utilizados sempre que faz uma nova visita a um dos nossos websites ou aplicações. São
+                                utilizados, geralmente, para direcionar a navegação aos interesses do utilizador,
+                                permitindo-nos prestar um serviço mais personalizado.</li>
+                            <li><strong>(b) Cookies de sessão</strong> - são cookies temporários que permanecem no
+                                arquivo de cookies do seu browser até sair do website ou aplicação. A informação obtida
+                                por estes cookies serve para analisar padrões de tráfego na web, permitindo-nos
+                                identificar problemas e fornecer uma melhor experiência de navegação.</li>
+                        </ul>
+
+                        <h4>Considerando, por sua vez, o domínio a que pertencem, os cookies podem ser:</h4>
+                        <ul>
+                            <li><strong>(a) cookies próprios</strong> – são cookies enviados para o equipamento terminal
+                                do utilizador a partir de um equipamento ou domínio gerido pela Números Plenos, Lda. e a
+                                partir do qual se presta o serviço solicitado pelo utilizador.</li>
+                            <li><strong>(b) cookies de terceiros</strong> – são cookies enviados para o equipamento
+                                terminal do utilizador a partir de um equipamento ou domínio que não é gerido pela
+                                Números Plenos, Lda., mas sim por outra entidade que trata os dados recolhidos através
+                                dos cookies.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tabela de Cookies -->
+                    <div class="cookies-section">
+                        <h3>Cookies Utilizados neste Site</h3>
+                        <p>Os cookies utilizados neste Site são os seguintes:</p>
+
+                        <table class="cookies-table">
+                            <thead>
+                                <tr>
+                                    <th>Tipo de Cookies</th>
+                                    <th>Nome</th>
+                                    <th>Finalidade</th>
+                                    <th>Duração</th>
+                                    <th>Próprios/de terceiros</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="cookie-type">Técnico|Essencial</span></td>
+                                    <td>**wordpress_[hash]**</td>
+                                    <td>Autenticação do utilizador (após login).</td>
+                                    <td>Sessão</td>
+                                    <td>Próprio</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="cookie-type">Técnico|Essencial</span></td>
+                                    <td>**wordpress_logged_in_[hash]**</td>
+                                    <td>Indica que o utilizador está logado e quem ele é.</td>
+                                    <td>14 dias</td>
+                                    <td>Próprio</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="cookie-type">Técnico|Essencial</span></td>
+                                    <td>**wp-settings-[UID]**</td>
+                                    <td>Persiste as configurações de visualização de ecrã do utilizador no admin (Ex:
+                                        número de itens por página).</td>
+                                    <td>1 ano</td>
+                                    <td>Próprio</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="cookie-type">Técnico|Essencial</span></td>
+                                    <td>**wp-settings-time-[UID]**</td>
+                                    <td>Usado para verificar quando o cookie `wp-settings-[UID]` foi definido.</td>
+                                    <td>1 ano</td>
+                                    <td>Próprio</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="cookie-type">Funcional|Comentários</span></td>
+                                    <td>**comment_author_[hash]**</td>
+                                    <td>Armazena o nome do autor do comentário preenchido.</td>
+                                    <td>347 dias</td>
+                                    <td>Próprio</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="cookie-type">Funcional|Comentários</span></td>
+                                    <td>**comment_author_email_[hash]**</td>
+                                    <td>Armazena o email do autor do comentário preenchido.</td>
+                                    <td>347 dias</td>
+                                    <td>Próprio</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="cookie-type">Funcional|Comentários</span></td>
+                                    <td>**comment_author_url_[hash]**</td>
+                                    <td>Armazena o URL do site do autor do comentário preenchido.</td>
+                                    <td>347 dias</td>
+                                    <td>Próprio</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Gestão de Cookies -->
+                    <div class="cookies-section">
+                        <h3>Gestão de Cookies</h3>
+                        <p>Todos os browsers permitem ao Utilizador aceitar, recusar ou apagar cookies, nomeadamente
+                            através da seleção das definições apropriadas no respetivo navegador.</p>
+
+                        <div class="highlight-box">
+                            <p><strong>Atenção:</strong> Se a configuração de privacidade do seu browser estiver
+                                definida como "Alta", não conseguirá aceder a alguns dos nossos serviços e poderá ser
+                                impedido de utilizar em pleno todas as funcionalidades dos nossos websites ou
+                                aplicações. Para solucionar esta questão, adicione os nossos endereços de Internet à
+                                lista de websites permitidos nas configurações de privacidade do seu browser, como por
+                                exemplo: <a href="https://www.noblesseproperties.pt/"
+                                    class="text-primary hover:underline">https://www.noblesseproperties.pt/</a>.</p>
+                        </div>
+
+                        <p>Se estiver a aceder aos nossos websites através de um computador empresarial e não conseguir
+                            aceder, o problema poderá estar nas configurações de segurança corporativa do computador.
+                            Recomendamos que entre em contato com o administrador do sistema.</p>
+
+                        <p>Para obter mais informações sobre os cookies em geral e/ou sobre como os desativar, o
+                            Utilizador poderá visitar <a href="https://www.allaboutcookies.org"
+                                class="text-primary hover:underline" target="_blank">www.allaboutcookies.org</a>, onde
+                            poderá encontrar informações sobre como gerir as suas configurações de navegação.</p>
+
+                        <div class="highlight-box">
+                            <p><strong>Nota importante:</strong> Note-se, no entanto, que, ao desativar cookies, o
+                                Utilizador poderá afectar, parcial ou totalmente, a sua experiência de navegação no
+                                Site.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reclamações -->
+                    <div class="cookies-section">
+                        <h3>Reclamações</h3>
+                        <p>Sem prejuízo de qualquer outra via de recurso administrativo ou judicial, o Utilizador tem
+                            direito a apresentar uma reclamação à autoridade de controlo competente nos termos da lei (a
+                            CNPD, Comissão Nacional de Proteção de Dados), caso entenda que o tratamento dos seus dados
+                            pela Números Plenos, Lda. viola o regime legal em vigor a cada momento.</p>
+                    </div>
+
+                    <!-- Questões e sugestões -->
+                    <div class="cookies-section">
+                        <h3>Questões e sugestões</h3>
+                        <div class="contact-info">
+                            <p>O Utilizador poderá contactar a Números Plenos, Lda. sobre todas as questões relacionadas
+                                com o tratamento dos seus dados pessoais e com o exercício dos direitos que lhe são
+                                conferidos pela legislação aplicável e, em especial, referidos na presente Política,
+                                através dos seguintes contactos:</p>
+                            <p><strong>E-mail:</strong> geral@noblesseproperties.pt</p>
+                            <p><strong>Morada:</strong> Rua Alexandre Braga, 9 r/c Esqº, 1150-002 Lisboa</p>
+                        </div>
+                    </div>
+
+                    <!-- Alterações à política -->
+                    <div class="cookies-section">
+                        <h3>Alterações à política de cookies</h3>
+                        <p>A Números Plenos, Lda. reserva-se o direito de, a todo o momento, alterar os presentes termos
+                            de tratamento de dados pessoais. Essas alterações serão devidamente publicitadas no Site.
+                        </p>
+                        <p>Contudo, sempre que forem efetuadas alterações relevantes para o Utilizador em matéria de
+                            cookies, voltará a visualizar uma janela pop-up de modo a que, consoante o tipo de cookie em
+                            causa, possa aceder à informação e/ou consentir na sua utilização e armazenamento.</p>
+                    </div>
+
+                    <!-- Data de atualização -->
+                    <div class="highlight-box">
+                        <p><strong>Data da última actualização:</strong> 16/01/2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Footer -->
+        <footer class="bg-text-primary text-white py-16">
+            <div class="container mx-auto px-4 lg:px-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <!-- Company Info -->
+                    <div class="lg:col-span-2" data-aos="fade-up">
+                        <div class="flex items-center mb-6">
+                            <a href="../"><img src="assets/images/logo-w.png" alt="" class="logo"></a>
+                        </div>
+                        <p class="text-gray-300 mb-6 max-w-md">
+                            Especialistas em propriedades de luxo, oferecendo experiências imobiliárias exclusivas para
+                            clientes exigentes.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-primary transition-luxury hover-scale">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-primary transition-luxury hover-scale">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z" />
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-primary transition-luxury hover-scale">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-primary transition-luxury hover-scale">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="md:text-right" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-lg font-source-pro font-bold mb-4">Contato</h3>
+                        <div class="space-y-3">
+                            <div class="flex md:justify-end items-center space-x-3">
+                                <span class="text-gray-300">Av. da Liberdade, 123<br />1250-096 Lisboa</span>
+                                <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div class="flex md:justify-end items-center space-x-3">
+                                <span class="text-gray-300">+351 962 034 356 </span>
+                                <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div class="flex md:justify-end items-center space-x-3">
+                                <span class="text-gray-300">geral@noblesseproperties.pt</span>
+                                <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <p class="text-gray-400 text-sm">
+                            © 2025 Nobless Properties. Todos os direitos reservados.
+                        </p>
+                        <div class="flex space-x-6 mt-4 md:mt-0">
+                            <a href="terms.html"
+                                class="text-gray-400 hover:text-primary text-sm transition-luxury">Termos de Uso</a>
+                            <a href="policy.html"
+                                class="text-gray-400 hover:text-primary text-sm transition-luxury">Política de
+                                Privacidade</a>
+                            <a href="cookies-policy.html"
+                                class="text-gray-400 hover:text-primary text-sm transition-luxury">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll reveal animation
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(el => {
+                const elementPosition = el.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementPosition < windowHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Initialize Swiper
+        document.addEventListener('DOMContentLoaded', function () {
+            new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                }
+            });
+        });
+    </script>
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+</body>
+
+</html>
