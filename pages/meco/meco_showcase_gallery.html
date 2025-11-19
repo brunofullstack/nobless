@@ -132,13 +132,13 @@
                     <nav class="space-y-8">
                         <a href="../../"
                             class="block text-lg text-text-primary hover:text-primary transition-luxury font-medium">Início</a>
-                        <a href="pages/quem-somos.html"
+                        <a href="../quem-somos.html"
                             class="block text-lg text-text-secondary hover:text-primary transition-luxury">Quem
                             somos</a>
-                        <a href="property_showcase_gallery.html"
+                        <a href="../property_showcase_gallery.html"
                             class="block text-lg text-text-secondary hover:text-primary transition-luxury">Nossos
                             Empreendimentos</a>
-                        <a href="quem-somos.html#partners"
+                        <a href="../quem-somos.html#partners"
                             class="block text-lg text-text-secondary hover:text-primary transition-luxury">Nossa Equipe
                             de Parceiros</a>
 
@@ -338,7 +338,7 @@
 
                         <!-- Footer Action -->
                         <div class="mt-12 text-center">
-                            <a href="pages/property_showcase_gallery.html"
+                            <a href="../property_showcase_gallery.html"
                                 class="bg-primary hover:bg-primary-600 text-white px-8 py-4 text-lg font-medium transition-luxury shadow-warm-lg hover-scale">
                                 Veja todas as propriedades
                             </a>
@@ -374,135 +374,77 @@
             <div class="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
         </section>
 
-        <!-- Filter Bar -->
-        <section class="sticky top-0 z-40 bg-white border-b border-secondary-200 shadow-warm-sm">
+        <!-- Filters Section -->
+        <section class="py-8 bg-secondary-50">
             <div class="container mx-auto px-4 lg:px-8">
-                <div class="py-4">
-                    <!-- Mobile Filter Toggle -->
-                    <div class="lg:hidden">
-                        <button id="mobile-filter-btn"
-                            class="flex items-center justify-between w-full bg-surface px-4 py-3 rounded-luxury text-text-primary hover:bg-secondary-100 transition-luxury">
-                            <span class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.207A1 1 0 013 6.5V4z" />
-                                </svg>
-                                Filtros
-                            </span>
-                            <svg class="w-5 h-5 transform transition-transform" id="filter-chevron" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <!-- Desktop Quick Filters -->
-                    <div class="hidden lg:flex items-center space-x-6">
-                        <div class="flex items-center space-x-2">
-                            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.207A1 1 0 013 6.5V4z" />
-                            </svg>
-                            <span class="text-text-primary font-medium">Filtros:</span>
-                        </div>
-
-                        <select
-                            class="bg-white border border-secondary-300 rounded-luxury px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
-                            <option>Tipo de Propriedade</option>
-                            <option>Villa</option>
-                            <option>Penthouse</option>
-                            <option>Apartamento</option>
-                            <option>Quinta</option>
-                        </select>
-
-                        <select
-                            class="bg-white border border-secondary-300 rounded-luxury px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
-                            <option>Localização</option>
-                            <option>Lisboa</option>
-                            <option>Cascais</option>
-                            <option>Sintra</option>
-                            <option>Porto</option>
-                        </select>
-
-                        <!--<select
-                        class="bg-white border border-secondary-300 rounded-luxury px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
-                        <option>Preço</option>
-                        <option>Até €1M</option>
-                        <option>€1M - €2M</option>
-                        <option>€2M - €5M</option>
-                        <option>€5M+</option>
-                    </select>-->
-
-                        <button class="text-primary hover:text-primary-600 text-sm font-medium transition-luxury">
-                            Filtros Avançados
-                        </button>
-
-                        <button class="text-text-secondary hover:text-primary text-sm transition-luxury">
-                            Limpar Filtros
-                        </button>
-                        <div class="flex items-center space-x-4 bg-white/80 px-4 py-2 rounded-luxury shadow-warm-sm">
-                            <span class="text-sm text-text-secondary font-medium">Ordenar por:</span>
-                            <select id="sort-select"
-                                class="bg-white border border-secondary-300 rounded-luxury px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-luxury">
-                                <option value="relevance">Relevância</option>
-                                <option value="price-low">Preço: Menor para Maior</option>
-                                <option value="price-high">Preço: Maior para Menor</option>
-                                <option value="size-large">Tamanho: Maior para Menor</option>
-                                <option value="date-new">Mais Recentes</option>
+                <div class="bg-white rounded-luxury shadow-warm-sm p-6">
+                    <h2 class="text-2xl font-source-pro font-bold text-text-primary mb-6">Filtrar Imóveis</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Tipo</label>
+                            <select id="type-filter"
+                                class="w-full bg-white border border-secondary-300 rounded-luxury py-2 px-3 focus:outline-none focus:border-primary">
+                                <option value="all">Todos</option>
+                                <option value="villa">Villa</option>
+                                <option value="apartment">Apartamento</option>
+                                <option value="townhouse">Moradia</option>
                             </select>
                         </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Quartos</label>
+                            <select id="bedrooms-filter"
+                                class="w-full bg-white border border-secondary-300 rounded-luxury py-2 px-3 focus:outline-none focus:border-primary">
+                                <option value="all">Todos</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                                <option value="5">5+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Casa de banho</label>
+                            <select id="bathrooms-filter"
+                                class="w-full bg-white border border-secondary-300 rounded-luxury py-2 px-3 focus:outline-none focus:border-primary">
+                                <option value="all">Todos</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                                <option value="5">5+</option>
+                                <option value="6">6+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Área (m²)</label>
+                            <select id="area-filter"
+                                class="w-full bg-white border border-secondary-300 rounded-luxury py-2 px-3 focus:outline-none focus:border-primary">
+                                <option value="all">Todos</option>
+                                <option value="0-150">Até 150m²</option>
+                                <option value="150-200">150-200m²</option>
+                                <option value="200-250">200-250m²</option>
+                                <option value="250-300">250-300m²</option>
+                                <option value="300+">300m²+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex justify-between">
+                        <button id="clear-filters" class="text-primary hover:text-primary-600 font-medium">
+                            Limpar Filtros
+                        </button>
                     </div>
                 </div>
 
-                <!-- Mobile Filter Panel -->
-                <div id="mobile-filter-panel" class="lg:hidden hidden border-t border-secondary-200 py-4">
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-medium text-text-primary mb-2">Tipo de Propriedade</label>
-                            <select
-                                class="w-full bg-white border border-secondary-300 rounded-luxury px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
-                                <option>Todos os Tipos</option>
-                                <option>Villa</option>
-                                <option>Penthouse</option>
-                                <option>Apartamento</option>
-                                <option>Quinta</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-primary mb-2">Localização</label>
-                            <select
-                                class="w-full bg-white border border-secondary-300 rounded-luxury px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
-                                <option>Todas as Localizações</option>
-                                <option>Lisboa</option>
-                                <option>Cascais</option>
-                                <option>Sintra</option>
-                                <option>Porto</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-primary mb-2">Faixa de Preço</label>
-                            <div class="flex space-x-2">
-                                <input type="number" placeholder="Min"
-                                    class="flex-1 bg-white border border-secondary-300 rounded-luxury px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
-                                <input type="number" placeholder="Max"
-                                    class="flex-1 bg-white border border-secondary-300 rounded-luxury px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
-                            </div>
-                        </div>
-
-                        <div class="flex space-x-3 pt-2">
-                            <button
-                                class="flex-1 bg-primary text-white py-2 rounded-luxury hover:bg-primary-600 transition-luxury">
-                                Aplicar Filtros
-                            </button>
-                            <button
-                                class="flex-1 bg-surface text-text-primary py-2 rounded-luxury hover:bg-secondary-100 transition-luxury">
-                                Limpar
-                            </button>
-                        </div>
-                    </div>
+                <div style="margin-top: 20px;" class="flex justify-end items-center space-x-4">
+                    <span class="text-text-secondary text-sm" id="properties-count">5 propriedades encontradas</span>
+                    <select id="sort-select"
+                        class="mt-5 bg-white border border-secondary-300 rounded-luxury py-2 px-3 text-sm focus:outline-none focus:border-primary">
+                        <option value="default">Ordenar por</option>
+                        <option value="price-low">Preço: Menor para Maior</option>
+                        <option value="price-high">Preço: Maior para Menor</option>
+                        <option value="size-large">Área: Maior para Menor</option>
+                        <option value="date-new">Mais Recentes</option>
+                    </select>
                 </div>
             </div>
         </section>
@@ -514,14 +456,14 @@
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
                     <div>
                         <p class="text-text-secondary text-base">
-                            <span class="font-semibold text-primary text-xl">5 propriedades</span> encontradas
+                            <span class="font-semibold text-primary text-xl" id="results-count">5 propriedades</span> encontradas
                         </p>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8" id="properties-grid">
                     <!-- Property Card 1 -->
-                    <div
-                        class="bg-white rounded-luxury-lg overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-luxury group">
+                    <div class="property-card bg-white rounded-luxury-lg overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-luxury group"
+                        data-type="villa" data-bedrooms="5" data-bathrooms="4" data-size="450" data-price="sob-consulta">
                         <div class="relative overflow-hidden">
                             <div class="relative">
                                 <img src="../../assets/images/properties/meco/exteriores/A/01.jpg"
@@ -590,8 +532,8 @@
                     </div>
 
                     <!-- Property Card 2 -->
-                    <div
-                        class="bg-white rounded-luxury-lg overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-luxury group">
+                    <div class="property-card bg-white rounded-luxury-lg overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-luxury group"
+                        data-type="villa" data-bedrooms="4" data-bathrooms="3" data-size="320" data-price="sob-consulta">
                         <div class="relative overflow-hidden">
                             <div class="relative">
                                 <img src="../../assets/images/properties/meco/exteriores/B/18.jpg"
@@ -659,8 +601,8 @@
                     </div>
 
                     <!-- Property Card 3 -->
-                    <div
-                        class="bg-white rounded-luxury-lg overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-luxury group">
+                    <div class="property-card bg-white rounded-luxury-lg overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-luxury group"
+                        data-type="villa" data-bedrooms="8" data-bathrooms="6" data-size="850" data-price="sob-consulta">
                         <div class="relative overflow-hidden">
                             <div class="relative">
                                 <img src="../../assets/images/properties/meco/exteriores/C/29.jpg"
@@ -728,8 +670,8 @@
                     </div>
 
                     <!-- Property Card 4 -->
-                    <div
-                        class="bg-white rounded-luxury-lg overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-luxury group">
+                    <div class="property-card bg-white rounded-luxury-lg overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-luxury group"
+                        data-type="apartment" data-bedrooms="3" data-bathrooms="2" data-size="180" data-price="sob-consulta">
                         <div class="relative overflow-hidden">
                             <div class="relative">
                                 <img src="../../assets/images/properties/meco/exteriores/D1/43.jpg"
@@ -797,8 +739,8 @@
                     </div>
 
                     <!-- Property Card 5 -->
-                    <div
-                        class="bg-white rounded-luxury-lg overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-luxury group">
+                    <div class="property-card bg-white rounded-luxury-lg overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-luxury group"
+                        data-type="villa" data-bedrooms="6" data-bathrooms="5" data-size="520" data-price="sob-consulta">
                         <div class="relative overflow-hidden">
                             <div class="relative">
                                 <img src="../../assets/images/properties/meco/exteriores/D2/58.jpg" alt="Villa Estoril"
@@ -954,7 +896,7 @@
                         <p class="mb-6">
                             Este empreendimento exclusivo oferece 5 Moradias isoladas com design contemporâneo, espaços
                             amplos e acabamentos premium, totalmente equipadas para garantir uma experiência de vida sem
-                            igual. Deixe-se envolver pela beleza incomparável do Meco e mergulhe nas suas águas
+                            igual. Deixe-se envolver pela beleza incomparável do Meco и mergulhe nas suas águas
                             azul-turquesa límpidas e caminhe nas suas areias brancas.
                         </p>
 
@@ -1297,6 +1239,179 @@
                     },
                 }
             });
+        });
+
+        // Filter System Implementation
+        document.addEventListener('DOMContentLoaded', function () {
+            // Elements
+            const propertyCards = document.querySelectorAll('.property-card');
+            const propertiesGrid = document.getElementById('properties-grid');
+            const propertiesCount = document.getElementById('properties-count');
+            const resultsCount = document.getElementById('results-count');
+
+            // Filters
+            const typeFilter = document.getElementById('type-filter');
+            const bedroomsFilter = document.getElementById('bedrooms-filter');
+            const bathroomsFilter = document.getElementById('bathrooms-filter');
+            const areaFilter = document.getElementById('area-filter');
+            const clearFiltersBtn = document.getElementById('clear-filters');
+            const sortSelect = document.getElementById('sort-select');
+
+            // Current filter state
+            let currentFilters = {
+                type: 'all',
+                bedrooms: 'all',
+                bathrooms: 'all',
+                area: 'all'
+            };
+
+            // Initialize filters
+            function initFilters() {
+                // Filter events
+                if (typeFilter) {
+                    typeFilter.addEventListener('change', function () {
+                        currentFilters.type = this.value;
+                        applyFilters();
+                    });
+                }
+
+                if (bedroomsFilter) {
+                    bedroomsFilter.addEventListener('change', function () {
+                        currentFilters.bedrooms = this.value;
+                        applyFilters();
+                    });
+                }
+
+                if (bathroomsFilter) {
+                    bathroomsFilter.addEventListener('change', function () {
+                        currentFilters.bathrooms = this.value;
+                        applyFilters();
+                    });
+                }
+
+                if (areaFilter) {
+                    areaFilter.addEventListener('change', function () {
+                        currentFilters.area = this.value;
+                        applyFilters();
+                    });
+                }
+
+                if (clearFiltersBtn) {
+                    clearFiltersBtn.addEventListener('click', clearFilters);
+                }
+
+                // Sort event
+                if (sortSelect) {
+                    sortSelect.addEventListener('change', function () {
+                        applyFilters();
+                    });
+                }
+            }
+
+            // Apply filters function
+            function applyFilters() {
+                let visibleCount = 0;
+
+                propertyCards.forEach(card => {
+                    const cardType = card.dataset.type;
+                    const cardBedrooms = parseInt(card.dataset.bedrooms);
+                    const cardBathrooms = parseInt(card.dataset.bathrooms);
+                    const cardSize = parseInt(card.dataset.size);
+
+                    // Check type filter
+                    const typeMatch = currentFilters.type === 'all' || cardType === currentFilters.type;
+
+                    // Check bedrooms filter
+                    const bedroomsMatch = currentFilters.bedrooms === 'all' || cardBedrooms >= parseInt(currentFilters.bedrooms);
+
+                    // Check bathrooms filter
+                    const bathroomsMatch = currentFilters.bathrooms === 'all' || cardBathrooms >= parseInt(currentFilters.bathrooms);
+
+                    // Check area filter
+                    let areaMatch = true;
+                    if (currentFilters.area !== 'all') {
+                        const [min, max] = currentFilters.area.split('-');
+                        if (max === '+') {
+                            areaMatch = cardSize >= parseInt(min);
+                        } else {
+                            areaMatch = cardSize >= parseInt(min) && cardSize <= parseInt(max);
+                        }
+                    }
+
+                    // Show/hide card based on filters
+                    if (typeMatch && bedroomsMatch && bathroomsMatch && areaMatch) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                // Update properties count
+                updatePropertiesCount(visibleCount);
+
+                // Apply sorting
+                applySorting();
+            }
+
+            // Apply sorting function
+            function applySorting() {
+                const sortValue = sortSelect.value;
+                const visibleCards = Array.from(propertyCards).filter(card => card.style.display !== 'none');
+
+                visibleCards.sort((a, b) => {
+                    switch (sortValue) {
+                        case 'price-low':
+                            return parseInt(a.dataset.price) - parseInt(b.dataset.price);
+                        case 'price-high':
+                            return parseInt(b.dataset.price) - parseInt(a.dataset.price);
+                        case 'size-large':
+                            return parseInt(b.dataset.size) - parseInt(a.dataset.size);
+                        case 'date-new':
+                            return new Date(b.dataset.date) - new Date(a.dataset.date);
+                        default:
+                            return 0;
+                    }
+                });
+
+                // Reorder cards in DOM
+                visibleCards.forEach(card => {
+                    propertiesGrid.appendChild(card);
+                });
+            }
+
+            // Clear all filters
+            function clearFilters() {
+                // Reset filters
+                if (typeFilter) typeFilter.value = 'all';
+                if (bedroomsFilter) bedroomsFilter.value = 'all';
+                if (bathroomsFilter) bathroomsFilter.value = 'all';
+                if (areaFilter) areaFilter.value = 'all';
+
+                // Reset current filters
+                currentFilters = {
+                    type: 'all',
+                    bedrooms: 'all',
+                    bathrooms: 'all',
+                    area: 'all'
+                };
+
+                // Apply filters (show all)
+                applyFilters();
+            }
+
+            // Update properties count
+            function updatePropertiesCount(count) {
+                if (propertiesCount) {
+                    propertiesCount.textContent = `${count} propriedade${count !== 1 ? 's' : ''} encontrada${count !== 1 ? 's' : ''}`;
+                }
+                if (resultsCount) {
+                    resultsCount.textContent = `${count} propriedade${count !== 1 ? 's' : ''}`;
+                }
+            }
+
+            // Initialize the filter system
+            initFilters();
         });
     </script>
     <script id="dhws-dataInjector" src="../../public/dhws-data-injector.js"></script>
